@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		583517FD1A344F92009C5AC5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 583517FB1A344F92009C5AC5 /* Bolts.framework */; };
+		583517FE1A344F92009C5AC5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 583517FC1A344F92009C5AC5 /* Parse.framework */; };
+		5847D2391A33A4D600A00808 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5847D2381A33A4D600A00808 /* Colors.swift */; };
+		58D50CB31A344C8A00AD4B3A /* NumoLogoFull.png in Resources */ = {isa = PBXBuildFile; fileRef = 58D50CB21A344C8A00AD4B3A /* NumoLogoFull.png */; };
+		D60BA6421A2AE08D00F7F1C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BA6411A2AE08D00F7F1C3 /* AppDelegate.swift */; };
+		D60BA6471A2AE08D00F7F1C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60BA6451A2AE08D00F7F1C3 /* Main.storyboard */; };
+		D60BA64C1A2AE08D00F7F1C3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60BA64A1A2AE08D00F7F1C3 /* LaunchScreen.xib */; };
+		D60BA6581A2AE08D00F7F1C3 /* NumoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BA6571A2AE08D00F7F1C3 /* NumoTests.swift */; };
+		D61F8D291A2EEBE800996130 /* ContactIntegrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61F8D281A2EEBE800996130 /* ContactIntegrationController.swift */; };
+		D62555A71A30407900312631 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62555A61A30407900312631 /* SystemConfiguration.framework */; };
+		D62555A91A30409800312631 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62555A81A30409800312631 /* QuartzCore.framework */; };
+		D62555AB1A3040B000312631 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62555AA1A3040B000312631 /* Security.framework */; };
+		D62555AD1A3040BE00312631 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62555AC1A3040BE00312631 /* AudioToolbox.framework */; };
+		D62555AF1A3040C800312631 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D62555AE1A3040C800312631 /* libz.1.1.3.dylib */; };
+		D62555B11A3040CF00312631 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62555B01A3040CF00312631 /* CoreGraphics.framework */; };
+		D62555B31A3040D700312631 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62555B21A3040D700312631 /* UIKit.framework */; };
+		D62555B51A3040E000312631 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62555B41A3040E000312631 /* MobileCoreServices.framework */; };
+		D62555B71A3040E700312631 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62555B61A3040E700312631 /* CFNetwork.framework */; };
+		D62555B91A3040F100312631 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62555B81A3040F100312631 /* Foundation.framework */; };
+		D62555C01A3065B800312631 /* AddressBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62555BF1A3065B800312631 /* AddressBookController.swift */; };
+		D62555CA1A30738000312631 /* DataCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62555C91A30738000312631 /* DataCellView.swift */; };
+		D6C3FEC41A2D86E10002B2A3 /* FindContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C3FEC31A2D86E10002B2A3 /* FindContactsViewController.swift */; };
+		D6C3FECA1A2D90B90002B2A3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3FEC91A2D90B90002B2A3 /* CoreLocation.framework */; };
+		D6C6C0001A2D746800F11841 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C6BFFF1A2D746800F11841 /* LaunchViewController.swift */; };
+		D6C6C0021A2D77EA00F11841 /* PromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C6C0011A2D77EA00F11841 /* PromptViewController.swift */; };
+		D6FB63471A31B0120082A504 /* AddContactHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FB63461A31B0120082A504 /* AddContactHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D60BA6521A2AE08D00F7F1C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D60BA6341A2AE08D00F7F1C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D60BA63B1A2AE08D00F7F1C3;
+			remoteInfo = Numo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		583517FB1A344F92009C5AC5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		583517FC1A344F92009C5AC5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		5847D2381A33A4D600A00808 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		58D50CB21A344C8A00AD4B3A /* NumoLogoFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NumoLogoFull.png; sourceTree = "<group>"; };
+		D60BA63C1A2AE08D00F7F1C3 /* Numo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Numo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60BA6401A2AE08D00F7F1C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D60BA6411A2AE08D00F7F1C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D60BA6461A2AE08D00F7F1C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D60BA64B1A2AE08D00F7F1C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D60BA6511A2AE08D00F7F1C3 /* NumoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60BA6561A2AE08D00F7F1C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D60BA6571A2AE08D00F7F1C3 /* NumoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumoTests.swift; sourceTree = "<group>"; };
+		D61F8D281A2EEBE800996130 /* ContactIntegrationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactIntegrationController.swift; path = ../ContactIntegrationController.swift; sourceTree = "<group>"; };
+		D62555A31A30405800312631 /* Numo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Numo-Bridging-Header.h"; sourceTree = "<group>"; };
+		D62555A61A30407900312631 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D62555A81A30409800312631 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D62555AA1A3040B000312631 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D62555AC1A3040BE00312631 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D62555AE1A3040C800312631 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		D62555B01A3040CF00312631 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D62555B21A3040D700312631 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D62555B41A3040E000312631 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D62555B61A3040E700312631 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D62555B81A3040F100312631 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D62555BF1A3065B800312631 /* AddressBookController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressBookController.swift; sourceTree = "<group>"; };
+		D62555C91A30738000312631 /* DataCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCellView.swift; sourceTree = "<group>"; };
+		D6C3FEC31A2D86E10002B2A3 /* FindContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindContactsViewController.swift; sourceTree = "<group>"; };
+		D6C3FEC91A2D90B90002B2A3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D6C6BFFF1A2D746800F11841 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		D6C6C0011A2D77EA00F11841 /* PromptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptViewController.swift; sourceTree = "<group>"; };
+		D6FB63461A31B0120082A504 /* AddContactHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D60BA6391A2AE08D00F7F1C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D62555B91A3040F100312631 /* Foundation.framework in Frameworks */,
+				D62555B71A3040E700312631 /* CFNetwork.framework in Frameworks */,
+				D62555B51A3040E000312631 /* MobileCoreServices.framework in Frameworks */,
+				583517FD1A344F92009C5AC5 /* Bolts.framework in Frameworks */,
+				D62555B31A3040D700312631 /* UIKit.framework in Frameworks */,
+				D62555B11A3040CF00312631 /* CoreGraphics.framework in Frameworks */,
+				583517FE1A344F92009C5AC5 /* Parse.framework in Frameworks */,
+				D62555AF1A3040C800312631 /* libz.1.1.3.dylib in Frameworks */,
+				D62555AD1A3040BE00312631 /* AudioToolbox.framework in Frameworks */,
+				D62555AB1A3040B000312631 /* Security.framework in Frameworks */,
+				D62555A91A30409800312631 /* QuartzCore.framework in Frameworks */,
+				D62555A71A30407900312631 /* SystemConfiguration.framework in Frameworks */,
+				D6C3FECA1A2D90B90002B2A3 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60BA64E1A2AE08D00F7F1C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		581E988F1A344B79003D0335 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				58D50CB21A344C8A00AD4B3A /* NumoLogoFull.png */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		D60BA6331A2AE08D00F7F1C3 = {
+			isa = PBXGroup;
+			children = (
+				D62555BE1A3041E700312631 /* Frameworks */,
+				D60BA63E1A2AE08D00F7F1C3 /* Numo */,
+				D60BA6541A2AE08D00F7F1C3 /* NumoTests */,
+				D60BA63D1A2AE08D00F7F1C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D60BA63D1A2AE08D00F7F1C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D60BA63C1A2AE08D00F7F1C3 /* Numo.app */,
+				D60BA6511A2AE08D00F7F1C3 /* NumoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D60BA63E1A2AE08D00F7F1C3 /* Numo */ = {
+			isa = PBXGroup;
+			children = (
+				581E988F1A344B79003D0335 /* New Group */,
+				D62555A31A30405800312631 /* Numo-Bridging-Header.h */,
+				D60BA6411A2AE08D00F7F1C3 /* AppDelegate.swift */,
+				D6FB63461A31B0120082A504 /* AddContactHelper.swift */,
+				D62555BF1A3065B800312631 /* AddressBookController.swift */,
+				5847D2381A33A4D600A00808 /* Colors.swift */,
+				D6C6BFFE1A2D743D00F11841 /* View Controllers */,
+				D60BA6451A2AE08D00F7F1C3 /* Main.storyboard */,
+				D60BA64A1A2AE08D00F7F1C3 /* LaunchScreen.xib */,
+				D60BA63F1A2AE08D00F7F1C3 /* Supporting Files */,
+			);
+			path = Numo;
+			sourceTree = "<group>";
+		};
+		D60BA63F1A2AE08D00F7F1C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6C3FEC91A2D90B90002B2A3 /* CoreLocation.framework */,
+				D60BA6401A2AE08D00F7F1C3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D60BA6541A2AE08D00F7F1C3 /* NumoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D60BA6571A2AE08D00F7F1C3 /* NumoTests.swift */,
+				D60BA6551A2AE08D00F7F1C3 /* Supporting Files */,
+			);
+			path = NumoTests;
+			sourceTree = "<group>";
+		};
+		D60BA6551A2AE08D00F7F1C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D60BA6561A2AE08D00F7F1C3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D62555BE1A3041E700312631 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				583517FB1A344F92009C5AC5 /* Bolts.framework */,
+				583517FC1A344F92009C5AC5 /* Parse.framework */,
+				D62555B81A3040F100312631 /* Foundation.framework */,
+				D62555B61A3040E700312631 /* CFNetwork.framework */,
+				D62555B41A3040E000312631 /* MobileCoreServices.framework */,
+				D62555B21A3040D700312631 /* UIKit.framework */,
+				D62555B01A3040CF00312631 /* CoreGraphics.framework */,
+				D62555AE1A3040C800312631 /* libz.1.1.3.dylib */,
+				D62555AC1A3040BE00312631 /* AudioToolbox.framework */,
+				D62555AA1A3040B000312631 /* Security.framework */,
+				D62555A81A30409800312631 /* QuartzCore.framework */,
+				D62555A61A30407900312631 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6C6BFFE1A2D743D00F11841 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D62555C91A30738000312631 /* DataCellView.swift */,
+				D61F8D281A2EEBE800996130 /* ContactIntegrationController.swift */,
+				D6C6BFFF1A2D746800F11841 /* LaunchViewController.swift */,
+				D6C6C0011A2D77EA00F11841 /* PromptViewController.swift */,
+				D6C3FEC31A2D86E10002B2A3 /* FindContactsViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D60BA63B1A2AE08D00F7F1C3 /* Numo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D60BA65B1A2AE08D00F7F1C3 /* Build configuration list for PBXNativeTarget "Numo" */;
+			buildPhases = (
+				D60BA6381A2AE08D00F7F1C3 /* Sources */,
+				D60BA6391A2AE08D00F7F1C3 /* Frameworks */,
+				D60BA63A1A2AE08D00F7F1C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Numo;
+			productName = Numo;
+			productReference = D60BA63C1A2AE08D00F7F1C3 /* Numo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D60BA6501A2AE08D00F7F1C3 /* NumoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D60BA65E1A2AE08D00F7F1C3 /* Build configuration list for PBXNativeTarget "NumoTests" */;
+			buildPhases = (
+				D60BA64D1A2AE08D00F7F1C3 /* Sources */,
+				D60BA64E1A2AE08D00F7F1C3 /* Frameworks */,
+				D60BA64F1A2AE08D00F7F1C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D60BA6531A2AE08D00F7F1C3 /* PBXTargetDependency */,
+			);
+			name = NumoTests;
+			productName = NumoTests;
+			productReference = D60BA6511A2AE08D00F7F1C3 /* NumoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D60BA6341A2AE08D00F7F1C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = NorthShoreApps;
+				TargetAttributes = {
+					D60BA63B1A2AE08D00F7F1C3 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					D60BA6501A2AE08D00F7F1C3 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = D60BA63B1A2AE08D00F7F1C3;
+					};
+				};
+			};
+			buildConfigurationList = D60BA6371A2AE08D00F7F1C3 /* Build configuration list for PBXProject "Numo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D60BA6331A2AE08D00F7F1C3;
+			productRefGroup = D60BA63D1A2AE08D00F7F1C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D60BA63B1A2AE08D00F7F1C3 /* Numo */,
+				D60BA6501A2AE08D00F7F1C3 /* NumoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D60BA63A1A2AE08D00F7F1C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58D50CB31A344C8A00AD4B3A /* NumoLogoFull.png in Resources */,
+				D60BA6471A2AE08D00F7F1C3 /* Main.storyboard in Resources */,
+				D60BA64C1A2AE08D00F7F1C3 /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60BA64F1A2AE08D00F7F1C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D60BA6381A2AE08D00F7F1C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6FB63471A31B0120082A504 /* AddContactHelper.swift in Sources */,
+				5847D2391A33A4D600A00808 /* Colors.swift in Sources */,
+				D61F8D291A2EEBE800996130 /* ContactIntegrationController.swift in Sources */,
+				D62555CA1A30738000312631 /* DataCellView.swift in Sources */,
+				D62555C01A3065B800312631 /* AddressBookController.swift in Sources */,
+				D6C6C0001A2D746800F11841 /* LaunchViewController.swift in Sources */,
+				D60BA6421A2AE08D00F7F1C3 /* AppDelegate.swift in Sources */,
+				D6C6C0021A2D77EA00F11841 /* PromptViewController.swift in Sources */,
+				D6C3FEC41A2D86E10002B2A3 /* FindContactsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60BA64D1A2AE08D00F7F1C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60BA6581A2AE08D00F7F1C3 /* NumoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D60BA6531A2AE08D00F7F1C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D60BA63B1A2AE08D00F7F1C3 /* Numo */;
+			targetProxy = D60BA6521A2AE08D00F7F1C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D60BA6451A2AE08D00F7F1C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D60BA6461A2AE08D00F7F1C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D60BA64A1A2AE08D00F7F1C3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D60BA64B1A2AE08D00F7F1C3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D60BA6591A2AE08D00F7F1C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D60BA65A1A2AE08D00F7F1C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D60BA65C1A2AE08D00F7F1C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/AustinKing/Downloads/parse-library-1",
+					"../$(PROJECT_DIR)",
+					/Users/josephkahn/Downloads/Numo,
+					Sat,
+					FINAL,
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Numo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Numo/Numo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D60BA65D1A2AE08D00F7F1C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/AustinKing/Downloads/parse-library-1",
+					"../$(PROJECT_DIR)",
+					/Users/josephkahn/Downloads/Numo,
+					Sat,
+					FINAL,
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Numo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Numo/Numo-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		D60BA65F1A2AE08D00F7F1C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NumoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Numo.app/Numo";
+			};
+			name = Debug;
+		};
+		D60BA6601A2AE08D00F7F1C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NumoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Numo.app/Numo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D60BA6371A2AE08D00F7F1C3 /* Build configuration list for PBXProject "Numo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60BA6591A2AE08D00F7F1C3 /* Debug */,
+				D60BA65A1A2AE08D00F7F1C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D60BA65B1A2AE08D00F7F1C3 /* Build configuration list for PBXNativeTarget "Numo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60BA65C1A2AE08D00F7F1C3 /* Debug */,
+				D60BA65D1A2AE08D00F7F1C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D60BA65E1A2AE08D00F7F1C3 /* Build configuration list for PBXNativeTarget "NumoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60BA65F1A2AE08D00F7F1C3 /* Debug */,
+				D60BA6601A2AE08D00F7F1C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D60BA6341A2AE08D00F7F1C3 /* Project object */;
+}
